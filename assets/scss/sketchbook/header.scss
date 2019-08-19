@@ -1,0 +1,12 @@
+@import '../sprite/sprite_maps';
+@import '../import/sprite_mixin';
+
+header {
+    background-color: red;
+    &:before {
+        display: inline-block;
+        @include get-sprite('icon_header_search', $sp_common);
+        vertical-align: top;
+        content: '';
+    }
+}
